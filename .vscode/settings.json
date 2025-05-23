@@ -2,5 +2,11 @@
   "deno.enable": true,
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "denoland.vscode-deno",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": "../.github/instructions/commit-message-rule.md"
+    }
+  ]
 }
