@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "start": "deno run -A src/index.ts"
+  },
+  "fmt": {
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "include": ["src/"]
+  }
+}
