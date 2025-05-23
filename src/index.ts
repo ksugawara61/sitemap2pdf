@@ -122,8 +122,8 @@ async function main() {
 
   await Deno.mkdir('docs', { recursive: true });
 
-  for (const [index, pageUrl] of urls) {
-    console.log(`\nProcessing URL: ${pageUrl} ()${index + 1}/${urls.length})`);
+  for (const [index, pageUrl] of urls.entries()) {
+    console.log(`\nProcessing URL: ${pageUrl} (${index + 1}/${urls.length})`);
     const baseFileName = sanitizeUrlToFileName(pageUrl);
 
     const html = await fetchPageHtml(pageUrl);
